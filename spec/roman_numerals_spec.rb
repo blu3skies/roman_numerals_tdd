@@ -13,4 +13,12 @@ describe 'RomanNumerals' do
     expect(RomanNumerals.convert(10)).to eq("X")
   end
 
+  it "Should be able to convert 25 to XXV" do 
+    expect(RomanNumerals.convert(25)).to eq ("XXV")
+  end 
+  
+  it "Should be able to convert 53 to XXXXXIII" do 
+    expect(RomanNumerals.convert(53)).to eq ("XXXXXIII")
+  end 
+
 end
